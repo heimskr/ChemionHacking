@@ -20,7 +20,7 @@ int main() {
 		"X     XX  X  X X    X  X\n"
 		"X     XX  X  X X    X  X\n"
 		" XXX  XX  XXX  XXXX X  X";
-	auto encoded = Chemion::encode(image);
+	const auto encoded = Chemion::encode(image);
 	std::cout << "std::array<std::array<uint8_t, 20>, 4> msg_static {\n";
 	for (const auto &array: encoded) {
 		std::cout << "\t{";
